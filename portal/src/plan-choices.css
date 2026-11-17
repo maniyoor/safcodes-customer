@@ -1,0 +1,21 @@
+/* Scoped to live plan choices; category cards and the rest of the theme keep their layout. */
+.live-choice-grid.live-plan-grid { gap:.6rem; align-items:stretch; }
+.live-choice.live-plan-compact {
+  min-height:0; height:auto; padding:.75rem .85rem; gap:.25rem;
+  justify-content:flex-start; line-height:1.35;
+}
+.live-plan-compact .live-plan-heading { display:grid; gap:.1rem; width:100%; min-width:0; }
+.live-plan-compact .live-plan-heading > strong { font-size:.94rem; overflow-wrap:anywhere; }
+.live-plan-compact .live-plan-heading > small { font-size:.75rem; }
+.live-plan-compact .live-plan-pricing { display:block; width:100%; margin-top:.1rem; }
+.live-plan-compact .live-price > strong { font-size:.96rem; line-height:1.35; }
+.live-plan-compact .live-price > small { margin-top:.1rem; white-space:normal; line-height:1.4; }
+.live-plan-compact .live-plan-term { display:block; margin-top:.1rem; font-size:.73rem; }
+.live-plan-compact .live-plan-feature {
+  display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:1;
+  overflow:hidden; width:100%; font-size:.75rem; line-height:1.4;
+}
+.live-plan-compact:focus-visible { outline:3px solid #89a8ef; outline-offset:2px; }
+@media (max-width:480px) {
+  .live-choice-grid.live-plan-grid { grid-template-columns:1fr; }
+}
